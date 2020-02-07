@@ -265,3 +265,9 @@ public enum Never {}
 	- **Zip**
 	- **CombineLatest**
 	- **Debounce**
+
+## Session 8: Handling threads using Combine
+- **Threading without Combine**
+- **Threading with Combine**
+- **SubscribeOn operator**
+- **ReceiveOn operator**
