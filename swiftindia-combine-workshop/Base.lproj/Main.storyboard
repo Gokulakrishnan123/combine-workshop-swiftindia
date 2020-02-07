@@ -7,16 +7,45 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Session3 View Controller-->
+        <!--Session4 View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="Session3ViewController" customModule="swiftindia_combine_workshop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="Session4ViewController" customModule="swiftindia_combine_workshop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sck-Vn-oZi">
+                                <rect key="frame" x="147" y="421" width="120" height="64"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="C9n-Dz-0c7"/>
+                                    <constraint firstAttribute="width" constant="120" id="Ila-9c-upl"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dy5-2F-6Ba">
+                                <rect key="frame" x="186" y="529" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Sck-Vn-oZi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1kg-8s-kZ0"/>
+                            <constraint firstItem="Dy5-2F-6Ba" firstAttribute="centerX" secondItem="Sck-Vn-oZi" secondAttribute="centerX" id="pIO-F9-DFq"/>
+                            <constraint firstItem="Sck-Vn-oZi" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="pPS-US-epP"/>
+                            <constraint firstItem="Dy5-2F-6Ba" firstAttribute="top" secondItem="Sck-Vn-oZi" secondAttribute="bottom" constant="44" id="pRL-UC-eTk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="Sck-Vn-oZi" id="aQw-nU-FTx"/>
+                        <outlet property="label" destination="Dy5-2F-6Ba" id="vIr-pn-9YI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
