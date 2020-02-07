@@ -158,5 +158,32 @@ public protocol Publisher {
 
 - **Subscriber is a protocol**
 
+```swift
+public protocol Subscriber : CustomCombineIdentifierConvertible {
+
+    /// The kind of values this subscriber receives.
+    associatedtype Input
+
+    /// The kind of errors this subscriber might receive.
+    associatedtype Failure : Error
+
+    /// Tells the subscriber that it has successfully subscribed to the publisher and may request items.
+    /// Use the received `Subscription` to request items from the publisher.
+    func receive(subscription: Subscription)
+
+    /// Tells the subscriber that the publisher has produced an element.
+    func receive(_ input: Self.Input) -> Subscribers.Demand
+
+    /// Tells the subscriber that the publisher has completed publishing, either normally or with an error.
+    func receive(completion: Subscribers.Completion<Self.Failure>)
+}
+```
 
 - **Wrapping UserDefaults into a subscriber**
+
+
+## Session 4: Combine meets UIKit
+
+- **Complete UIControl.Publisher**
+
+- **Convert UITableView's scrollViewDidScroll method into a Publisher**
