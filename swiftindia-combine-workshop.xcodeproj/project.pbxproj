@@ -14,6 +14,7 @@
 		7116873023E9720400CA54EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7116872F23E9720400CA54EF /* Assets.xcassets */; };
 		7116873323E9720400CA54EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7116873123E9720400CA54EF /* LaunchScreen.storyboard */; };
 		7132023223ED69270077D40C /* Session2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7132023123ED69270077D40C /* Session2ViewController.swift */; };
+		713E09C723ED72F30090FE14 /* Session3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713E09C623ED72F30090FE14 /* Session3ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7116873223E9720400CA54EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7116873423E9720400CA54EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7132023123ED69270077D40C /* Session2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session2ViewController.swift; sourceTree = "<group>"; };
+		713E09C623ED72F30090FE14 /* Session3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session3ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				7116872623E9720300CA54EF /* AppDelegate.swift */,
 				7116872823E9720300CA54EF /* SceneDelegate.swift */,
+				713E09C623ED72F30090FE14 /* Session3ViewController.swift */,
 				7132023123ED69270077D40C /* Session2ViewController.swift */,
 				7116872A23E9720300CA54EF /* Session1ViewController.swift */,
 				7116872C23E9720300CA54EF /* Main.storyboard */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7132023223ED69270077D40C /* Session2ViewController.swift in Sources */,
+				713E09C723ED72F30090FE14 /* Session3ViewController.swift in Sources */,
 				7116872B23E9720300CA54EF /* Session1ViewController.swift in Sources */,
 				7116872723E9720300CA54EF /* AppDelegate.swift in Sources */,
 				7116872923E9720300CA54EF /* SceneDelegate.swift in Sources */,

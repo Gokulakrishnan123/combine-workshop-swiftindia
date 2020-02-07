@@ -24,7 +24,6 @@
 
 ### Session 4: Combine meets UIKit
 - Add TapPublisher in UIButton (UIControl in general)
-- Integrate UITableViewDiffableDataSource with Combine
 - Convert UIScrollViewDelegate into a Combine like API
 
 ### Session 5: Error handling in Combine
@@ -133,3 +132,31 @@
 	- MapError
 	- Merge
 	- Zip
+
+
+## Session 3: How to make custom publishers & subscribers?
+- **Publisher is a protocol**
+
+```swift
+public protocol Publisher {
+
+    /// The kind of values published by this publisher.
+    associatedtype Output
+
+    /// The kind of errors this publisher might publish.
+    associatedtype Failure : Error
+
+    /// This function is called to attach the specified `Subscriber` to this `Publisher` by `subscribe(_:)`
+    func receive<S>(subscriber: S) where S : Subscriber, Self.Failure == S.Failure, Self.Output == S.Input
+}
+
+// Self.Failure == S.Failure, Self.Output == S.Input
+```
+
+- **Wrapping UserDefaults into a publisher**
+
+
+- **Subscriber is a protocol**
+
+
+- **Wrapping UserDefaults into a subscriber**
