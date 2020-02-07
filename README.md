@@ -187,3 +187,63 @@ public protocol Subscriber : CustomCombineIdentifierConvertible {
 - **Complete UIControl.Publisher**
 
 - **Convert UITableView's scrollViewDidScroll method into a Publisher**
+
+## Session 5: Error handling in Combine
+
+- **What is Error in Combine**
+	- Error is part of `Publisher` & `Subscriber` both
+	- Any subscription can terminate in two ways, either via `.finished` or `.failure(Error)`
+	- `.failure(Error)` is used to send errors
+	- Just like value, we can also transform and observe errors
+
+
+```swift
+public protocol Publisher {
+
+    /// The kind of errors this publisher might publish.
+    /// Use `Never` if this `Publisher` does not publish errors.
+    associatedtype Failure : Error
+    ...
+}
+
+public protocol Subscriber {
+
+    /// The kind of errors this subscriber might receive.
+    /// Use `Never` if this `Subscriber` cannot receive errors.
+    associatedtype Failure : Error
+    ...
+}
+
+extension Subscribers {
+    /// - finished: The publisher finished normally.
+    /// - failure: The publisher stopped publishing due to the indicated error.
+    public enum Completion<Failure> where Failure : Error {
+	
+        case finished
+        case failure(Failure)
+    }
+}
+```
+
+- **How to model custom Error**
+
+
+- **How does Error flow**
+
+
+- **How to react to errors**
+
+
+- **A note about Never**
+
+```swift
+/// Use `Never` as the return type when declaring a closure, function, or
+/// method that unconditionally throws an error, traps, or otherwise does
+/// not terminate.
+///
+///     func crashAndBurn() -> Never {
+///         fatalError("Something very, very bad happened")
+///     }
+
+public enum Never {}
+```
