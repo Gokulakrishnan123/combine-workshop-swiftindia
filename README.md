@@ -14,9 +14,7 @@
 ### Session 2: Quick intro to Combine, part 2
 
 - What is an Operator
-- Different types of framework supported Operators
-- How to use operators with publishers
-
+- Different types of Operators supported by Combine
 
 ### Session 3: How to make custom publishers & subscribers?
 - Publisher is a protocol
@@ -114,3 +112,24 @@
 - **How to cancel a subscription**
 	- Cancellable
 	- AnyCancellable
+
+
+## Session 2: Quick intro to Combine, part 2
+
+- **What is an Operator**
+	- Operators are those publishers which can't generate value on their own but rather transform the value provided by a source publisher or a previous operator
+	- They are used between a publisher and a subscriber
+	- Roughly 3 kinds of operators
+		- ones which modify the values
+		- ones which modify the thread
+		- ones which modify the stream itself
+
+
+- **Different types of Operators supported by Combine**
+	- Map
+	- FlatMap
+	- Filter
+	- Catch
+	- MapError
+	- Merge
+	- Zip

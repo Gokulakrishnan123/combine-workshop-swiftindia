@@ -13,7 +13,7 @@ struct DemoError: Error {}
 
 class Session1ViewController: UIViewController {
 
-    // It stores all the subscribers which are Cancellable
+    // It stores all the subscribers which are AnyCancellable
     var cancellables: [AnyCancellable] = []
 
     // @Published Publisher
