@@ -252,8 +252,16 @@ public enum Never {}
 - **Networking without Combine**
 - **Networkin with Combine**
 - **What is DataTaskPublisher**
-- **How to make an API request **
+- **How to make an API request**
 - **How to handle response from server**
 - **How to parse success response**
 - **How to validate response to handle error**
 - **How to parse and handle error**
+
+## Session 7: Handling multiple async tasks using Combine
+- **Handling multiple async tasks without Combine (GCD & OperationQueue)**
+- **Combine operators that enable handling multiple async tasks**
+	- **Merge**
+	- **Zip**
+	- **CombineLatest**
+	- **Debounce**

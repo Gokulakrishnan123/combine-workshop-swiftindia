@@ -18,6 +18,7 @@
 		713E09C923ED88920090FE14 /* Session4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713E09C823ED88920090FE14 /* Session4ViewController.swift */; };
 		713E09CB23ED9D6A0090FE14 /* Session5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713E09CA23ED9D6A0090FE14 /* Session5ViewController.swift */; };
 		713E09CD23EDD4540090FE14 /* Session6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713E09CC23EDD4540090FE14 /* Session6ViewController.swift */; };
+		713E09CF23EDE0540090FE14 /* Session7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713E09CE23EDE0540090FE14 /* Session7ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		713E09C823ED88920090FE14 /* Session4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session4ViewController.swift; sourceTree = "<group>"; };
 		713E09CA23ED9D6A0090FE14 /* Session5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session5ViewController.swift; sourceTree = "<group>"; };
 		713E09CC23EDD4540090FE14 /* Session6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session6ViewController.swift; sourceTree = "<group>"; };
+		713E09CE23EDE0540090FE14 /* Session7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session7ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			children = (
 				7116872623E9720300CA54EF /* AppDelegate.swift */,
 				7116872823E9720300CA54EF /* SceneDelegate.swift */,
+				713E09CE23EDE0540090FE14 /* Session7ViewController.swift */,
 				713E09CC23EDD4540090FE14 /* Session6ViewController.swift */,
 				713E09CA23ED9D6A0090FE14 /* Session5ViewController.swift */,
 				713E09C823ED88920090FE14 /* Session4ViewController.swift */,
@@ -159,6 +162,7 @@
 				7116872B23E9720300CA54EF /* Session1ViewController.swift in Sources */,
 				713E09CB23ED9D6A0090FE14 /* Session5ViewController.swift in Sources */,
 				7116872723E9720300CA54EF /* AppDelegate.swift in Sources */,
+				713E09CF23EDE0540090FE14 /* Session7ViewController.swift in Sources */,
 				713E09C923ED88920090FE14 /* Session4ViewController.swift in Sources */,
 				7116872923E9720300CA54EF /* SceneDelegate.swift in Sources */,
 			);
